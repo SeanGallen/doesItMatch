@@ -1,10 +1,12 @@
-<form [formGroup]="textInput" (ngSubmit) = "onClickSubmit()"> 
+<form [formGroup]="textInput" (ngSubmit)="onSubmit()"> 
+
+  Does it Match?  {{results()}}
   <div class="form-group"> 
-    <textarea type = "textarea" name = "textA"></textarea>
+    <textarea formControlName = "textA"></textarea>
   </div>
   <br/> 
   <div class="form-group"> 
-    <textarea type = "textarea" name = "textB"></textarea>
+    <textarea formControlName = "textB"></textarea>
   </div>
   <br/> 
   <div class="form-group"> 

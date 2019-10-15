@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-input-page',
@@ -8,18 +8,21 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 })
 export class InputPageComponent implements OnInit {
   
-  textInput: FormGroup;
-
   constructor(private formBuilder: FormBuilder ) { }
 
 
-  ngOnInit() {
-    this.textInput = this.formBuilder.group({
+  ngOnInit() { }
+    textInput = this.formBuilder.group({
       textA : [''],
-      textB: ['']
+      textB:  ['']
     });
+
+  onSubmit(){
+    this.results();
+      
   }
 
-  onClickSubmit(){}
-
+  results(){
+    return this.textInput.value.textA === this.textInput.value.textB;
+  }
 }
