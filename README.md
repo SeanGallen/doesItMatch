@@ -4,9 +4,11 @@
 
 - [ ] Build out Front End.
     - [ ] Front Page
-        - [ ] add CSS
-        - [ ] add functionality 
+        - [ ] add more functionality 
     - [ ] Result Page
     - [ ] add Service 
 - [ ] CSS
+    - [ ] add color, 
+    - [ ] increase button
+    - [ ] add material design or something similar
 - [ ] Tests
