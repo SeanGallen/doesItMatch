@@ -8,7 +8,8 @@
     - [ ] Result Page
     - [ ] add Service 
 - [ ] CSS
-    - [ ] add color, 
+    - [x] add color, 
     - [ ] increase button
-    - [ ] add material design or something similar
+    - [x] add material design or something similar
+    - [ ] Look at removing padding in mat-form
 - [ ] Tests
