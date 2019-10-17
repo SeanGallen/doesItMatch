@@ -6,9 +6,12 @@
 
 .textBElement
   margin-left: 2em;
+  background-color: white;
 
 .textAElement
   margin-right: 2em;
+  background-color: white;
+  border: 0px;
 
 .result
   display: flex;
@@ -16,8 +19,14 @@
   justify-content: center;
   padding: 2em;
 
-textarea 
+mat-form-field  
   width: 500px;
   height: 350px;
+  
+textarea
+  width: 500px;
+  height: 324px;
 
+host ::ng-deep .mat-form-field-wrapper
+  padding-bottom: 0;
     

@@ -3,14 +3,14 @@
    Does it Match?  {{results()}}
   </div>
   <div class="matchForm">
-    <div class="textAElement"> 
-      <textarea formControlName = "textA"></textarea>
-    </div>
+    <mat-form-field class="textAElement">
+        <textarea matInput formControlName = "textA"></textarea>
+    </mat-form-field>
     <div> 
       <input type = "submit" value = "submit"> 
     </div>
-    <div class="textBElement"> 
-      <textarea formControlName = "textB"></textarea>
-    </div>
+    <mat-form-field class="textBElement" >
+        <textarea matInput formControlName = "textB"></textarea>
+    </mat-form-field>
   </div>
 </form>
