@@ -5,11 +5,17 @@
 - [ ] Build out Front End.
     - [ ] Front Page
         - [ ] add more functionality 
-    - [ ] Result Page
+    - [ ] Result Component
+        
     - [ ] add Service 
+        - [ ] return same text
+        - [ ] add markers for different types
+            - [ ] ideally color
+                - [ ] different color to mean different features
+        - [ ] return line numbers
 - [ ] CSS
     - [x] add color, 
-    - [ ] increase button
+    - [x] increase button
     - [x] add material design or something similar
     - [ ] Look at removing padding in mat-form
 - [ ] Tests
