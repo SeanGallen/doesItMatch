@@ -1,3 +1,16 @@
+<form *ngIf="returnValue" [formGroup]="textResult"> 
+  <div class="matchForm">
+    <mat-form-field class="textAElement">
+        <textarea matInput formControlName = "textA"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field class="textBElement" >
+        <textarea matInput formControlName = "textB"></textarea>
+    </mat-form-field>
+  </div>
+</form>
+
+
 <form [formGroup]="textInput" (ngSubmit)="onSubmit()"> 
   <div class="result">
    Does it Match?  {{results()}}

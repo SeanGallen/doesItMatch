@@ -9,7 +9,7 @@ import { FormBuilder } from '@angular/forms';
 export class InputPageComponent implements OnInit {
   
   constructor(private formBuilder: FormBuilder ) { }
-
+  returnValue: boolean = false;
 
   ngOnInit() { }
     textInput = this.formBuilder.group({
@@ -19,6 +19,7 @@ export class InputPageComponent implements OnInit {
 
   onSubmit(){
     this.results();
+    this.returnValue = true;
       
   }
 
