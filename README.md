@@ -5,7 +5,7 @@
 - [ ] Build out Front End.
     - [ ] Front Page
         - [ ] add more functionality 
-    - [ ] Result Component
+    - [x] Result form
         
     - [ ] add Service 
         - [ ] return same text
