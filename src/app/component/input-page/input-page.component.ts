@@ -17,10 +17,14 @@ export class InputPageComponent implements OnInit {
       textB:  ['']
     });
 
+    textResult = this.formBuilder.group({
+      textA : [''],
+      textB:  ['']
+    });
+
   onSubmit(){
     this.results();
-    this.returnValue = true;
-      
+    this.returnValue = !this.returnValue;
   }
 
   results(){
