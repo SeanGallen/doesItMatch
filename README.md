@@ -7,7 +7,7 @@
         - [ ] add more functionality 
     - [x] Result form
         
-    - [ ] add Service 
+    - [x] add Service 
         - [ ] return same text
         - [ ] add markers for different types
             - [ ] ideally color
