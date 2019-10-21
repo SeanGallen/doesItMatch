@@ -8,7 +8,7 @@
     - [x] Result form
         
     - [x] add Service 
-        - [ ] return same text
+        - [X] return same text
         - [ ] add markers for different types
             - [ ] ideally color
                 - [ ] different color to mean different features
