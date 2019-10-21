@@ -10,4 +10,7 @@ export class TextMatchService {
     this.texts.push(text);
     console.log("here is the service", this.texts);
   }
+  get(){
+    return this.texts;
+  }
 }
