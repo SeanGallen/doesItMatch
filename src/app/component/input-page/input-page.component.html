@@ -12,9 +12,6 @@
 
 
 <form [formGroup]="textInput" (ngSubmit)="onSubmit()"> 
-  <div class="result">
-   Does it Match?  {{results()}}
-  </div>
   <div class="matchForm">
     <mat-form-field class="textAElement">
         <textarea matInput formControlName = "textA"></textarea>

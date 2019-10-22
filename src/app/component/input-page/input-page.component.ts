@@ -10,7 +10,6 @@ import { TextMatchService } from '../../text-match-service';
 export class InputPageComponent implements OnInit {
   
   constructor(private formBuilder: FormBuilder, private textsMatches: TextMatchService ) { }
-  returnValue: boolean = false;
 
   ngOnInit() { }
     textInput = this.formBuilder.group({
@@ -25,8 +24,6 @@ export class InputPageComponent implements OnInit {
 
   onSubmit(){
     this.add();
-    this.results();
-    this.returnValue = !this.returnValue;
     this.get();
   }
   add(){
@@ -35,11 +32,11 @@ export class InputPageComponent implements OnInit {
   }
 
   get(){
-    var strArr = this.textsMatches.get();
-    this.textResult.patchValue({ textA: strArr[0], textB: strArr[1]});
+    console.log("i work");
+    var equalReturn = this.textsMatches.equal();
+    console.log(equalReturn);
+    //this.textResult.patchValue({ textA: equalReturn['texts'][0], textB: equalReturn['texts'][1]});
   }
-  results(){
-    return this.textInput.value.textA === this.textInput.value.textB;
-  }
+  
 
 }
