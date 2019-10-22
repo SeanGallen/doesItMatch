@@ -10,7 +10,6 @@ export class TextMatchService {
 
   add(text: string) {
     this.texts.push(text);
-    console.log("here is the service", this.texts);
   }
  
   equal(){
@@ -19,6 +18,5 @@ export class TextMatchService {
       this.equalityResponse['texts'] = this.texts;
       return this.equalityResponse;
     }
-    
   }
 }

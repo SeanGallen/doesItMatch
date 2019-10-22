@@ -8,7 +8,8 @@ import { TextMatchService } from '../../text-match-service';
   styleUrls: ['./input-page.component.sass']
 })
 export class InputPageComponent implements OnInit {
-  
+  returnValue: boolean = false;
+
   constructor(private formBuilder: FormBuilder, private textsMatches: TextMatchService ) { }
 
   ngOnInit() { }
@@ -32,10 +33,9 @@ export class InputPageComponent implements OnInit {
   }
 
   get(){
-    console.log("i work");
     var equalReturn = this.textsMatches.equal();
-    console.log(equalReturn);
-    //this.textResult.patchValue({ textA: equalReturn['texts'][0], textB: equalReturn['texts'][1]});
+    this.textResult.patchValue({ textA: equalReturn['texts'][0], textB: equalReturn['texts'][1]});
+    this.returnValue = true; 
   }
   
 
