@@ -19,3 +19,7 @@
     - [x] add material design or something similar
     - [ ] Look at removing padding in mat-form
 - [ ] Tests
+
+- Branch work
+    - [ ] work on color text, maybe try to switch out second text area with <pre><span>
+    - [ ] this might solve the number line issue two.
