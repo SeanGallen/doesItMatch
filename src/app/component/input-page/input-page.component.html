@@ -1,12 +1,8 @@
 <form *ngIf="returnValue" [formGroup]="textResult"> 
   <div class="matchForm">
-    <mat-form-field class="textAElement">
-        <textarea matInput formControlName = "textA"></textarea>
-    </mat-form-field>
+    <pre><span class='textResultA'>{{textAReturn}}</span></pre>
   
-    <mat-form-field class="textBElement" >
-        <textarea matInput formControlName = "textB"></textarea>
-    </mat-form-field>
+    <pre><span [innerHTML]='textBReturn'></span></pre>
   </div>
 </form>
 

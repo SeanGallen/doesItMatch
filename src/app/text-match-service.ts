@@ -18,5 +18,19 @@ export class TextMatchService {
       this.equalityResponse['texts'] = this.texts;
       return this.equalityResponse;
     }
+    else{
+      let returnText = "";
+      for(var i = 0; i< this.texts[0].length; i++){
+        if(this.texts[0][i] !== this.texts[1][i]){
+            returnText += '<span class=\'colorChange\'>' + this.texts[1][i] + '</span>';
+            continue;
+        }
+        returnText += this.texts[1][i];
+      }
+      this.texts[1] = returnText;
+      this.equalityResponse['valid'] = false;
+      this.equalityResponse['texts'] = this.texts;
+      return this.equalityResponse;
+    }
   }
 }

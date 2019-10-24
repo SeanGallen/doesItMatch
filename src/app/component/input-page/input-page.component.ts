@@ -1,14 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { TextMatchService } from '../../text-match-service';
 
 @Component({
   selector: 'app-input-page',
   templateUrl: './input-page.component.html',
-  styleUrls: ['./input-page.component.sass']
+  styleUrls: ['./input-page.component.sass'],
+  encapsulation: ViewEncapsulation.None
 })
 export class InputPageComponent implements OnInit {
   returnValue: boolean = false;
+  textAReturn: string;
+  textBReturn: string;
 
   constructor(private formBuilder: FormBuilder, private textsMatches: TextMatchService ) { }
 
@@ -34,7 +37,9 @@ export class InputPageComponent implements OnInit {
 
   get(){
     var equalReturn = this.textsMatches.equal();
-    this.textResult.patchValue({ textA: equalReturn['texts'][0], textB: equalReturn['texts'][1]});
+
+    this.textAReturn =  equalReturn['texts'][0];
+    this.textBReturn =  equalReturn['texts'][1];
     this.returnValue = true; 
   }
   
