@@ -19,11 +19,14 @@ export class TextMatchService {
       return this.equalityResponse;
     }
     else{
-      let returnText = "";
-      for(var i = 0; i< this.texts[0].length; i++){
-        if(this.texts[0][i] !== this.texts[1][i]){
-            returnText += '<span class=\'colorChange\'>' + this.texts[1][i] + '</span>';
-            continue;
+      let returnText = "1. ";
+      let count = 2;
+      for(var i = 0; i< this.texts[1].length; i++){
+        
+        if(this.texts[1][i] === '\n') {
+          returnText += this.texts[1][i] + count + '. ';
+          count++;
+          continue;
         }
         returnText += this.texts[1][i];
       }
