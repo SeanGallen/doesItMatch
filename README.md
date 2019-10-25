@@ -12,7 +12,8 @@
         - [ ] add markers for different types
             - [ ] ideally color
                 - [ ] different color to mean different features
-        - [ ] return line numbers
+        - [x] return line numbers
+            - refactor the addNumberLine function
 - [ ] CSS
     - [x] add color, 
     - [x] increase button
