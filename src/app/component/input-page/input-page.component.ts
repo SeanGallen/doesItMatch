@@ -5,7 +5,7 @@ import { TextMatchService } from '../../text-match-service';
 @Component({
   selector: 'app-input-page',
   templateUrl: './input-page.component.html',
-  styleUrls: ['./input-page.component.sass'],
+  styleUrls: ['./input-page.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class InputPageComponent implements OnInit {

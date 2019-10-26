@@ -2,9 +2,9 @@
 
 
 
-body 
-  $base-color: lightblue
-  background-color:  $base-color
+body {
+  background-color:  lightblue;
+}
 
   
   

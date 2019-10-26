@@ -1,46 +1,55 @@
-.matchForm 
+.matchForm {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 3em;
+}
 
-.textBElement
+.textBElement {
   margin-left: 2em;
   background-color: white;
+}
 
-.textAElement
+.textAElement {
   margin-right: 2em;
   background-color: white;
   border: 0px;
+}
 
-.result
+.result {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2em;
+}
 
-mat-form-field  
+mat-form-field  {
   width: 500px;
   height: 350px;
+}
   
-textarea
+textarea {
   width: 500px;
   height: 324px;
+}
 
-.textResultA
+.textResultA {
   width: 500px;
   height: 324px;
+}
 
-::slotted(span) 
+::slotted(span) {
   font-weight: bold;
+}
 
-/deep/
+/deep/ {
   font: red;
+}
 
   
 
 
-
+/* 
 // host ::ng-deep .mat-form-field-wrapper
-//   padding-bottom: 0;
+//   padding-bottom: 0; */
     
