@@ -138,5 +138,10 @@
       }
     }
   },
-  "defaultProject": "doesItMatch"
+  "defaultProject": "doesItMatch",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
+    }
+  }
 }
