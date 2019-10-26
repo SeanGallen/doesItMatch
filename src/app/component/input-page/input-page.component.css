@@ -1,21 +1,12 @@
-.matchForm {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3em;
+.textAReturn {
+  margin-left: 2em;
+  background-color: white;
 }
 
-textAReturn {
-  width: 500px;
-  height: 324px;
+.textBReturn {
+  margin-left: 2em;
+  background-color: white;
 }
-
-
-textBReturn {
-  width: 500px;
-  height: 324px;
-}
-
 
 .textElement {
   display: flex;
@@ -35,6 +26,12 @@ textBReturn {
   border: 0px;
 }
 
+.matchForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
 
 
 mat-form-field  {
