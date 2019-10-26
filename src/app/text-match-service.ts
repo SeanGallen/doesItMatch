@@ -19,21 +19,31 @@ export class TextMatchService {
       return this.equalityResponse;
     }
     else{
-      let returnText = "1. ";
-      let count = 2;
-      for(var i = 0; i< this.texts[1].length; i++){
-        
-        if(this.texts[1][i] === '\n') {
-          returnText += this.texts[1][i] + count + '. ';
-          count++;
-          continue;
-        }
-        returnText += this.texts[1][i];
-      }
-      this.texts[1] = returnText;
+      this.addNumberLines();
       this.equalityResponse['valid'] = false;
       this.equalityResponse['texts'] = this.texts;
       return this.equalityResponse;
     }
+  }
+  addNumberLines(){
+    this.numberAddition(0);
+    this.numberAddition(1);
+  }
+
+  numberAddition(inputNum){
+    let returnText = "1. ";
+      let count = 2;
+      for(var i = 0; i< this.texts[inputNum].length; i++){
+        
+        if(this.texts[inputNum][i] === '\n') {
+          returnText += this.texts[inputNum][i] + count + '. ';
+          count++;
+          continue;
+        }
+        else {
+          returnText += this.texts[inputNum][i];
+        }
+    }
+    this.texts[inputNum] = returnText;
   }
 }
