@@ -28,10 +28,16 @@ export class TextMatchService {
   }
 
   addColor(){
+    let textALength = this.texts[0].length;
+    let textBLength = this.texts[1].length;
     var resultText = '';
-    for(var i = 0; i< this.texts[0].length; i++)
+    for(var i = 0; i < textBLength; i++)
     {
-      if(this.texts[0][i] !== this.texts[1][i]){
+      if(textBLength > textALength && i >= textALength) {
+        resultText += '<span class=\"alterColor\">' + this.texts[1][i] + '</span>';
+        continue;
+      }
+     if(this.texts[0][i] !== this.texts[1][i]){
         resultText += '<span class=\"alterColor\">' + this.texts[1][i] + '</span>';
       }
       else {
