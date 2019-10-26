@@ -5,6 +5,25 @@
   padding: 3em;
 }
 
+textAReturn {
+  width: 500px;
+  height: 324px;
+}
+
+
+textBReturn {
+  width: 500px;
+  height: 324px;
+}
+
+
+.textElement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
 .textBElement {
   margin-left: 2em;
   background-color: white;
@@ -16,12 +35,7 @@
   border: 0px;
 }
 
-.result {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2em;
-}
+
 
 mat-form-field  {
   width: 500px;
@@ -33,23 +47,7 @@ textarea {
   height: 324px;
 }
 
-.textResultA {
-  width: 500px;
-  height: 324px;
+
+.alterColor {
+  background-color: lightgreen;
 }
-
-::slotted(span) {
-  font-weight: bold;
-}
-
-/deep/ {
-  font: red;
-}
-
-  
-
-
-/* 
-// host ::ng-deep .mat-form-field-wrapper
-//   padding-bottom: 0; */
-    

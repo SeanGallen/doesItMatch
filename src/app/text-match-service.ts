@@ -19,12 +19,28 @@ export class TextMatchService {
       return this.equalityResponse;
     }
     else{
+      this.addColor();
       this.addNumberLines();
       this.equalityResponse['valid'] = false;
       this.equalityResponse['texts'] = this.texts;
       return this.equalityResponse;
     }
   }
+
+  addColor(){
+    var resultText = '';
+    for(var i = 0; i< this.texts[0].length; i++)
+    {
+      if(this.texts[0][i] !== this.texts[1][i]){
+        resultText += '<span class=\"alterColor\">' + this.texts[1][i] + '</span>';
+      }
+      else {
+        resultText += this.texts[1][i];
+      }
+    }
+    this.texts[1] = resultText;
+  }
+
   addNumberLines(){
     this.numberAddition(0);
     this.numberAddition(1);
