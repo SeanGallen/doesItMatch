@@ -2,12 +2,16 @@
   margin-left: 2em;
   background-color: white;
   margin-right: 20em;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 .textBReturn {
   margin-left: 5em;
   background-color: white;
-  
+  margin-right: 20em;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
  
 .textBox{
