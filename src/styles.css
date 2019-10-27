@@ -3,7 +3,8 @@
 
 
 body {
-  background-color:  lightblue;
+  --main-bg-color: lightBlue;
+  background-color: var(--main-bg-color)
 }
 
   

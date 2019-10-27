@@ -14,11 +14,13 @@ export class TextMatchService {
  
   equal(){
     if(this.texts[0] === this.texts[1]){
+      document.body.style.setProperty(`--main-bg-color`, 'green');
       this.equalityResponse['valid'] = true;
       this.equalityResponse['texts'] = this.texts;
       return this.equalityResponse;
     }
     else{
+      document.body.style.setProperty(`--main-bg-color`, 'red');
       this.addColor();
       this.addNumberLines();
       this.equalityResponse['valid'] = false;
