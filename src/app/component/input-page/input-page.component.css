@@ -1,18 +1,23 @@
 .textAReturn {
   margin-left: 2em;
   background-color: white;
+  margin-right: 20em;
 }
 
 .textBReturn {
-  margin-left: 2em;
+  margin-left: 5em;
   background-color: white;
+  
 }
-
+ 
+.textBox{
+  width: 500px;
+  margin-right: 6em;
+}
 .returnTextElement {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3em;
 }
 
 .textBElement {
@@ -42,7 +47,6 @@ textarea {
   width: 500px;
   height: 324px;
 }
-
 
 .alterColor {
   background-color: lightgreen;

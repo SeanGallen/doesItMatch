@@ -1,7 +1,11 @@
 <form *ngIf="returnValue" [formGroup]="textResult"> 
   <div class="returnTextElement">
-    <pre class="textAReturn"><span [innerHTML]='textAReturn'></span></pre>
-    <pre class="textBReturn"><span [innerHTML]='textBReturn'></span></pre>
+    <div class="textBox"> 
+     <pre class="textAReturn"><span [innerHTML]='textAReturn'></span></pre>
+    </div>
+    <div class="textBox">
+      <pre class="textBReturn"><span [innerHTML]='textBReturn'></span></pre>
+    </div>
   </div>
 </form>
 
