@@ -21,11 +21,6 @@ export class InputPageComponent implements OnInit {
       textB:  ['']
     });
 
-    textResult = this.formBuilder.group({
-      textA : [''],
-      textB:  ['']
-    });
-
   onSubmit(){
     this.add();
     this.get();

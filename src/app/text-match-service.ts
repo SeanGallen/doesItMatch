@@ -6,7 +6,7 @@ import { text } from '@angular/core/src/render3';
 })
 export class TextMatchService {
   texts: string[] = [];
-  equalityResponse: object = {'valid': false, 'texts': this.texts};
+  equalityResponse: object = {'texts': this.texts};
 
   add(text: string) {
     this.texts.push(text);
@@ -15,7 +15,6 @@ export class TextMatchService {
   equal(){
     if(this.texts[0] === this.texts[1]){
       document.body.style.setProperty(`--main-bg-color`, 'green');
-      this.equalityResponse['valid'] = true;
       this.equalityResponse['texts'] = this.texts;
       return this.equalityResponse;
     }
@@ -23,7 +22,6 @@ export class TextMatchService {
       document.body.style.setProperty(`--main-bg-color`, 'red');
       this.addColor();
       this.addNumberLines();
-      this.equalityResponse['valid'] = false;
       this.equalityResponse['texts'] = this.texts;
       return this.equalityResponse;
     }

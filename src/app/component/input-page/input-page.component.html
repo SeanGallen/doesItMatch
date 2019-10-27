@@ -1,4 +1,4 @@
-<form *ngIf="returnValue" [formGroup]="textResult"> 
+<div *ngIf="returnValue"> 
   <div class="returnTextElement">
       <div class="textBox"> 
           <div class="textAReturn"><span [innerHTML]='textAReturn'></span></div>
@@ -6,14 +6,8 @@
       <div class="textBox">
           <div class="textBReturn"><span [innerHTML]='textBReturn'></span></div>
       </div>
-    <!-- <div class="textBox"> 
-     <pre class="textAReturn"><span [innerHTML]='textAReturn'></span></pre>
-    </div>
-    <div class="textBox">
-      <pre class="textBReturn"><span [innerHTML]='textBReturn'></span></pre>
-    </div> -->
   </div>
-</form>
+</div>
 
 
 <form [formGroup]="textInput" (ngSubmit)="onSubmit()"> 
