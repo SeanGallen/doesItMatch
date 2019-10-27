@@ -47,3 +47,7 @@ textarea {
 .alterColor {
   background-color: lightgreen;
 }
+
+.endedEarly {
+  background-color: rgb(227, 210, 250);
+}

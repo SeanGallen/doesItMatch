@@ -44,6 +44,9 @@ export class TextMatchService {
         resultText += this.texts[1][i];
       }
     }
+    if(textALength > textBLength){
+      resultText += '<span class=\"endedEarly\">' + ' ' + '</span>';
+    }
     this.texts[1] = resultText;
   }
 
