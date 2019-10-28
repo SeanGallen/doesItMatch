@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { TextMatchService } from '../../text-match-service';
+import { TextMatchService } from '../../service/text-match-service';
 
 @Component({
   selector: 'app-input-page',
@@ -25,7 +25,7 @@ export class InputPageComponent implements OnInit {
     this.add();
     this.get();
   }
-  
+
   add(){
     this.textsMatches.add(this.textInput.value.textA);
     this.textsMatches.add(this.textInput.value.textB);
