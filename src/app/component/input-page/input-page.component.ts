@@ -25,18 +25,16 @@ export class InputPageComponent implements OnInit {
     this.add();
     this.get();
   }
+  
   add(){
     this.textsMatches.add(this.textInput.value.textA);
     this.textsMatches.add(this.textInput.value.textB);
   }
 
   get(){
-    var equalReturn = this.textsMatches.equal();
-
-    this.textAReturn =  equalReturn['texts'][0];
-    this.textBReturn =  equalReturn['texts'][1];
+    var textReturns = this.textsMatches.equal();
+    this.textAReturn =  textReturns[0];
+    this.textBReturn =  textReturns[1];
     this.returnValue = true; 
   }
-  
-
 }

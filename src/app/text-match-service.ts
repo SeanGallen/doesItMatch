@@ -1,12 +1,10 @@
 import { Injectable } from '@angular/core';
-import { text } from '@angular/core/src/render3';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TextMatchService {
   texts: string[] = [];
-  equalityResponse: object = {'texts': this.texts};
 
   add(text: string) {
     this.texts.push(text);
@@ -15,16 +13,13 @@ export class TextMatchService {
   equal(){
     if(this.texts[0] === this.texts[1]){
       document.body.style.setProperty(`--main-bg-color`, 'green');
-      this.equalityResponse['texts'] = this.texts;
-      return this.equalityResponse;
     }
     else{
       document.body.style.setProperty(`--main-bg-color`, 'red');
       this.addColor();
       this.addNumberLines();
-      this.equalityResponse['texts'] = this.texts;
-      return this.equalityResponse;
     }
+    return this.texts;
   }
 
   addColor(){
@@ -59,11 +54,9 @@ export class TextMatchService {
     let returnText = "1. ";
       let count = 2;
       for(var i = 0; i< this.texts[inputNum].length; i++){
-        
         if(this.texts[inputNum][i] === '\n') {
           returnText += this.texts[inputNum][i] + count + '. ';
           count++;
-          continue;
         }
         else {
           returnText += this.texts[inputNum][i];
