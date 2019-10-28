@@ -25,7 +25,8 @@
     - [x] increase button
     - [x] add material design or something similar
     - [ ] Look at removing padding in mat-form
-    - [ ] Will look into a different html element to fit everything
+    - [x] Will look into a different html element to fit everything
+    - [ ] Fix div width issue on return text.
     
 - [ ] Tests
     - [x] Fixed old tests
