@@ -28,4 +28,5 @@
     - [ ] Will look into a different html element to fit everything
     
 - [ ] Tests
+    - [x] Fixed old tests
     - [ ] Test out serives
