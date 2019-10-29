@@ -9,4 +9,18 @@ describe('TextMatchService', () => {
     const service: TextMatchService = TestBed.get(TextMatchService);
     expect(service).toBeTruthy();
   });
+
+  it('text array should start empty', () => {
+    const service: TextMatchService = TestBed.get(TextMatchService);
+    var shouldBeEmpty = service.texts.length;
+    expect(shouldBeEmpty).toBe(0);
+  });
+
+  it('add will increase text array size', () => {
+    const service: TextMatchService = TestBed.get(TextMatchService);
+    service.add('first data');
+    var willNotBeEmpty = service.texts.length;
+    expect(willNotBeEmpty).toBe(1);
+  });
+
 });
