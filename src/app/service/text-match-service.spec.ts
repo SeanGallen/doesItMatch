@@ -23,4 +23,15 @@ describe('TextMatchService', () => {
     expect(willNotBeEmpty).toBe(1);
   });
 
+  it('add numbers line to texts', () => {
+    const service: TextMatchService = TestBed.get(TextMatchService);
+    service.add('first data');
+    service.add('second data');
+    var firstLine = service.texts[0];
+    service.numberAddition(1);
+    var secondLineWithNumbers = service.texts[1];
+    expect(firstLine[0]).toBe('f');
+    expect(secondLineWithNumbers[0]).toBe('1');
+  });
+
 });
