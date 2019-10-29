@@ -34,4 +34,15 @@ describe('TextMatchService', () => {
     expect(secondLineWithNumbers[0]).toBe('1');
   });
 
+  it('add numbers for several lines to texts', () => {
+    const service: TextMatchService = TestBed.get(TextMatchService);
+    service.add('first data\n second line');
+    service.add('second data\n second line');
+    var firstLine = service.texts[0];
+    service.numberAddition(1);
+    var secondLineWithNumbers = service.texts[1];
+    expect(firstLine[12]).toBe('s');
+    expect(secondLineWithNumbers[15]).toBe('2');
+  });
+
 });
