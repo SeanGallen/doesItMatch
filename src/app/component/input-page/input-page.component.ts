@@ -32,7 +32,7 @@ export class InputPageComponent implements OnInit {
   }
 
   get(){
-    var textReturns = this.textsMatches.equal();
+    var textReturns = this.textsMatches.equalityCheck();
     this.textAReturn =  textReturns[0];
     this.textBReturn =  textReturns[1];
     this.returnValue = true; 

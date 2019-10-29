@@ -10,7 +10,7 @@ export class TextMatchService {
     this.texts.push(text);
   }
  
-  equal(){
+  equalityCheck(){
     if(this.texts[0] === this.texts[1]){
       document.body.style.setProperty(`--main-bg-color`, 'green');
     }
