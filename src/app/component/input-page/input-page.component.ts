@@ -27,8 +27,7 @@ export class InputPageComponent implements OnInit {
   }
 
   add(){
-    this.textsMatches.add(this.textInput.value.textA);
-    this.textsMatches.add(this.textInput.value.textB);
+    this.textsMatches.add(this.textInput.value.textA, this.textInput.value.textB);
   }
 
   get(){

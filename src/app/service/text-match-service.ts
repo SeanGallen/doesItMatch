@@ -6,8 +6,10 @@ import { Injectable } from '@angular/core';
 export class TextMatchService {
   texts: string[] = [];
 
-  add(text: string) {
-    this.texts.push(text);
+  add(textA: string, textB: string) {
+    this.texts.length = 0;
+    this.texts.push(textA);
+    this.texts.push(textB);;
   }
  
   equalityCheck(){

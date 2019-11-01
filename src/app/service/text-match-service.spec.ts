@@ -18,15 +18,14 @@ describe('TextMatchService', () => {
 
   it('add will increase text array size', () => {
     const service: TextMatchService = TestBed.get(TextMatchService);
-    service.add('first data');
+    service.add('first data', 'second data');
     var willNotBeEmpty = service.texts.length;
-    expect(willNotBeEmpty).toBe(1);
+    expect(willNotBeEmpty).toBe(2);
   });
 
   it('add numbers line to texts', () => {
     const service: TextMatchService = TestBed.get(TextMatchService);
-    service.add('first data');
-    service.add('second data');
+    service.add('first data','second data');
     var firstLine = service.texts[0];
     service.numberAddition(1);
     var secondLineWithNumbers = service.texts[1];
@@ -36,8 +35,7 @@ describe('TextMatchService', () => {
 
   it('add numbers for several lines to texts', () => {
     const service: TextMatchService = TestBed.get(TextMatchService);
-    service.add('first data\n second line');
-    service.add('second data\n second line');
+    service.add('first data\n second line', 'second data\n second line');
     var firstLine = service.texts[0];
     service.numberAddition(1);
     var secondLineWithNumbers = service.texts[1];
