@@ -9,6 +9,7 @@
     - [ ] Create header / welcome section
     - [ ] add botton section
     - [ ] email, teams or slack results
+    - [ ] consider regular express for equality test
         
     - [x] add Service 
         - [X] return same text
