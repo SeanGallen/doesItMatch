@@ -53,6 +53,10 @@ textarea {
   background-color: lightgreen;
 }
 
+.colorSpace{
+  background-color: lightblue;
+}
+
 .endedEarly {
   background-color: rgb(227, 210, 250);
 }

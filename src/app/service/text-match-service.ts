@@ -35,6 +35,10 @@ export class TextMatchService {
         continue;
       }
      if(this.texts[0][i] !== this.texts[1][i]){
+        if(this.texts[1][i] === ' ') { 
+          resultText += '<span class=\"colorSpace\">' + this.texts[1][i] + '</span>';
+          continue;
+        }
         resultText += '<span class=\"alterColor\">' + this.texts[1][i] + '</span>';
       }
       else {
