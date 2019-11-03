@@ -46,7 +46,7 @@ export class TextMatchService {
       }
     }
     if(textALength > textBLength){
-      resultText += '<span class=\"endedEarly\">' + ' ' + '</span>';
+      resultText += '<span class=\"endedEarly\">' + '  ' + '</span>';
     }
     this.texts[1] = resultText;
   }
